@@ -1,0 +1,163 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Stats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sport</th>
+      <th>Team</th>
+      <th>Position</th>
+      <th>Games started</th>
+      <th>Games played</th>
+      <th>Wins</th>
+      <th>Losses</th>
+      <th>Pass completions</th>
+      <th>Pass attempts</th>
+      <th>Passing yards</th>
+      <th>Passing touchdowns</th>
+      <th>Rushing attempts</th>
+      <th>Rushing yards</th>
+      <th>Rushing touchdows</th>
+      <th>Receptions</th>
+      <th>Reception yards</th>
+      <th>Reception touchdowns</th>
+      <th>Pancakes</th>
+      <th>Tackles</th>
+      <th>Sacks</th>
+      <th>Fumbles</th>
+      <th>Interception</th>
+      <th>Field goals</th>
+      <th>Kickreturns</th>
+      <th>Kickreturn yards</th>
+      <th>Kickreturn touchdowns</th>
+      <th>Yards per game</th>
+      <th>Plate appernaces</th>
+      <th>At bats</th>
+      <th>Hits</th>
+      <th>Runs scored</th>
+      <th>Runs batted in</th>
+      <th>Walks</th>
+      <th>Strike outs</th>
+      <th>Stolen bases</th>
+      <th>Doubles</th>
+      <th>Triples</th>
+      <th>Home runs</th>
+      <th>Pitcher wins</th>
+      <th>Pitcher losses</th>
+      <th>Pitcher saves</th>
+      <th>Pitcher no decsions</th>
+      <th>Innings pitched</th>
+      <th>Hits allowed</th>
+      <th>Runs allowed</th>
+      <th>Strikeouts</th>
+      <th>Walks allowed</th>
+      <th>Minutes played</th>
+      <th>Fieldgoals made</th>
+      <th>Fieldgoal attemps</th>
+      <th>Threepoints made</th>
+      <th>Threepoint attemps</th>
+      <th>Freethrows made</th>
+      <th>Freethrow attemps</th>
+      <th>Rebounds</th>
+      <th>Assists</th>
+      <th>Steals</th>
+      <th>Blocks</th>
+      <th>Points</th>
+      <th>Draws</th>
+      <th>Goals per game</th>
+      <th>Assists</th>
+      <th>Shots taken</th>
+      <th>Saves</th>
+      <th>Shots faced</th>
+      <th>Team score</th>
+      <th>Distance time</th>
+      <th>Placed</th>
+      <th>Event</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stats.each do |stat| %>
+      <tr>
+        <td><%= stat.sport %></td>
+        <td><%= stat.team %></td>
+        <td><%= stat.position %></td>
+        <td><%= stat.games_started %></td>
+        <td><%= stat.games_played %></td>
+        <td><%= stat.wins %></td>
+        <td><%= stat.losses %></td>
+        <td><%= stat.pass_completions %></td>
+        <td><%= stat.pass_attempts %></td>
+        <td><%= stat.passing_yards %></td>
+        <td><%= stat.passing_touchdowns %></td>
+        <td><%= stat.rushing_attempts %></td>
+        <td><%= stat.rushing_yards %></td>
+        <td><%= stat.rushing_touchdows %></td>
+        <td><%= stat.receptions %></td>
+        <td><%= stat.reception_yards %></td>
+        <td><%= stat.reception_touchdowns %></td>
+        <td><%= stat.pancakes %></td>
+        <td><%= stat.tackles %></td>
+        <td><%= stat.sacks %></td>
+        <td><%= stat.fumbles %></td>
+        <td><%= stat.interception %></td>
+        <td><%= stat.field_goals %></td>
+        <td><%= stat.kickreturns %></td>
+        <td><%= stat.kickreturn_yards %></td>
+        <td><%= stat.kickreturn_touchdowns %></td>
+        <td><%= stat.yards_per_game %></td>
+        <td><%= stat.plate_appernaces %></td>
+        <td><%= stat.at_bats %></td>
+        <td><%= stat.hits %></td>
+        <td><%= stat.runs_scored %></td>
+        <td><%= stat.runs_batted_in %></td>
+        <td><%= stat.walks %></td>
+        <td><%= stat.strike_outs %></td>
+        <td><%= stat.stolen_bases %></td>
+        <td><%= stat.doubles %></td>
+        <td><%= stat.triples %></td>
+        <td><%= stat.home_runs %></td>
+        <td><%= stat.pitcher_wins %></td>
+        <td><%= stat.pitcher_losses %></td>
+        <td><%= stat.pitcher_saves %></td>
+        <td><%= stat.pitcher_no_decsions %></td>
+        <td><%= stat.innings_pitched %></td>
+        <td><%= stat.hits_allowed %></td>
+        <td><%= stat.runs_allowed %></td>
+        <td><%= stat.strikeouts %></td>
+        <td><%= stat.walks_allowed %></td>
+        <td><%= stat.minutes_played %></td>
+        <td><%= stat.fieldgoals_made %></td>
+        <td><%= stat.fieldgoal_attemps %></td>
+        <td><%= stat.threepoints_made %></td>
+        <td><%= stat.threepoint_attemps %></td>
+        <td><%= stat.freethrows_made %></td>
+        <td><%= stat.freethrow_attemps %></td>
+        <td><%= stat.rebounds %></td>
+        <td><%= stat.assists %></td>
+        <td><%= stat.steals %></td>
+        <td><%= stat.blocks %></td>
+        <td><%= stat.points %></td>
+        <td><%= stat.draws %></td>
+        <td><%= stat.goals_per_game %></td>
+        <td><%= stat.assists %></td>
+        <td><%= stat.shots_taken %></td>
+        <td><%= stat.saves %></td>
+        <td><%= stat.shots_faced %></td>
+        <td><%= stat.team_score %></td>
+        <td><%= stat.distance_time %></td>
+        <td><%= stat.placed %></td>
+        <td><%= stat.event %></td>
+        <td><%= link_to 'Show', stat %></td>
+        <td><%= link_to 'Edit', edit_stat_path(stat) %></td>
+        <td><%= link_to 'Destroy', stat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Stat', new_stat_path %>

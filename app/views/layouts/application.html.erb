@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stats</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+      <script>
+        $(document).ready(function (){
+            $("#stat_sport").change(function() {
+                // foo is the id of the other select box 
+                if ($(this).val() == "football") {
+                    $("#foo").show();
+                    $("#football").show();
+                    $("#baseball").hide();
+                    $("#basketball").hide();
+                    $("#soccer").hide();
+                    $("#crosscountry").hide();
+                    $("#trackfield").hide();
+                }
+                else if ($(this).val() == "baseball") {
+					$("#foo").show();
+                    $("#football").hide();
+                    $("#baseball").show();
+                    $("#basketball").hide();
+                    $("#soccer").hide();
+                    $("#crosscountry").hide();
+                    $("#trackfield").hide();
+                }
+				else if ($(this).val() == "basketball") {
+                	$("#foo").show();
+                    $("#football").hide();
+                    $("#baseball").hide();
+                    $("#basketball").show();
+                    $("#soccer").hide();
+                    $("#crosscountry").hide();
+                    $("#trackfield").hide();
+                }
+				else if ($(this).val() == "soccer") {
+                	$("#foo").show();
+                    $("#football").hide();
+                    $("#baseball").hide();
+                    $("#basketball").hide();
+                    $("#soccer").show();
+                    $("#crosscountry").hide();
+                    $("#trackfield").hide();
+                }
+				else if ($(this).val() == "crosscountry") {
+                	$("#foo").show();
+                    $("#football").hide();
+                    $("#baseball").hide();
+                    $("#basketball").hide();
+                    $("#soccer").hide();
+                    $("#crosscountry").show();
+                    $("#trackfield").show();
+                }
+				else if ($(this).val() == "trackandfield") {
+                	$("#foo").show();
+                    $("#football").hide();
+                    $("#baseball").hide();
+                    $("#basketball").hide();
+                    $("#soccer").hide();
+                    $("#crosscountry").hide();
+                    $("#trackfield").show();
+                }
+                else{
+                    $("#foo").show();
+                    $("#football").hide();
+                    $("#baseball").hide();
+                    $("#basketball").hide();
+                    $("#soccer").hide();
+                    $("#crosscountry").hide();
+                    $("#trackfield").hide();
+                } 
+            });
+        });
+    </script>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
